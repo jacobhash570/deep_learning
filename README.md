@@ -66,3 +66,34 @@ Import your dependencies, and read in the charity_data.csv to a Pandas DataFrame
 Preprocess the dataset like you did in Step 1, taking into account any modifications to optimize the model.
 Design a neural network model, taking into account any modifications that will optimize the model to achieve higher than 75% accuracy.
 Save and export your results to an HDF5 file, and name it AlphabetSoupCharity_Optimization.h5.
+
+## Step 4: Report on the Neural Network Model
+
+# Overview
+The purpose of the model is to predict if funding be will be successful or unsuccessful for Alphabet Soup.  
+
+# Results:
+
+## Data Preprocessing
+What variable(s) are considered the target(s) for your model? 
+ - 'Is_Successful' is the target.
+ 
+What variable(s) are considered to be the features for your model? 
+ - 'APPLICATION_TYPE', 'AFFILIATION', 'CLASSIFICATION', 'USE_CASE', 'ORGANIZATION', 'STATUS', 'INCOME_AMT', 'SPECIAL_CONSIDERATIONS', 'ASK_AMT' are features.
+
+What variable(s) are neither targets nor features, and should be removed from the input data? 
+- 'EIN' and 'NAME' were dropped as they have no bearing on results.
+
+## Compiling, Training, and Evaluating the Model. 
+
+How many neurons, layers, and activation functions did you select for your neural network model, and why?
+ - 2 layer, 35 and 15 neurons respectively. Both hidden layers used activation of relu and output layer activation of sigmoid.
+
+Were you able to achieve the target model performance?
+ - I wasn't able to achive a 75% target, but got close at 68%.
+
+What steps did you take to try and increase model performance?
+ - Added additional layers, increase/decrease epochs, and increase/decrease neurons in hidden layers, and using different activation functions.
+
+## Summary 
+ - The most simplistic model was the best which surprised me.
